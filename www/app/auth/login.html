@@ -1,0 +1,32 @@
+<ion-view title="Inicio de sesion">
+    <ion-content overflow-scroll="true" style="padding: 20px;" class="center">
+        <div class="spacer" style="height: 80px;"></div>
+        <h1 class="center">DOMIGO</h1>
+        <!--<h5 class="center">lema</h5>-->
+        <form name="formLogin">
+            <div class="list list-inset"><br>
+                <label class="item item-input">
+                    <i class="icon ion-person placeholder-icon"></i>
+                    &nbsp;
+                    <input type="text" name="usuario" placeholder="Nombre de usuario" ng-model="vm.usuario.username" ng-required="true">
+                </label><br>
+                <label class="item item-input">
+                    <i class="icon ion-key placeholder-icon"></i>
+                    &nbsp;
+                    <input type="password" name="contrasena" placeholder="Contraseña" ng-model="vm.usuario.password" ng-required="true">
+                </label>
+                <button class="button button-block button-positive"
+                        ng-click="vm.iniciarSesion()" ng-disabled="formLogin.$invalid">
+                    Inciar Sesión
+                </button>
+            </div>
+        </form>
+        <br>
+        <div class="center">
+            <a style="display:block;margin-left:auto;margin-right:auto;" ui-sref="register">
+                <span>Registrarse</span>
+            </a>
+        </div>
+        <br>
+    </ion-content>
+</ion-view>
