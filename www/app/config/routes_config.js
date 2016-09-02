@@ -7,7 +7,7 @@
     angular
         .module('app')
         .config(config)
-        .constant('HOME', 'app.historial');
+        .constant('HOME', 'app.servicios');
 
 
     /* @ngInject */

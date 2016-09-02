@@ -23,6 +23,11 @@
                 statego: 'app.servicios',
                 icon: 'ion-ios-location'
             },
+            {
+                nombre: 'Pagos',
+                statego: 'app.pagos',
+                icon: 'ion-cash'
+            }
         ];
 
         vm.logout = authService.logout;

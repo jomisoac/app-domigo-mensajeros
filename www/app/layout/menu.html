@@ -5,10 +5,9 @@
     <ion-content class="custom">
         <div class="home center">
             <img ng-if="vm.usuario.rol === 'MENSAJERO'" style="width:120px;height:120px;margin-top:10%;" ng-src="http://api.domigo.co/images/mensajeros/{{vm.usuario.mensajero.fotografia}}" class="img-perfil img-rounded">
-            <p class="nombre-conductor">{{vm.usuario.username}}</p>
-            <!--<p class="nombre-conductor">Cliente</p>-->
+            <p class="nombre-conductor">{{vm.usuario.mensajero.nombre}} {{vm.usuario.mensajero.apellidos}}</p>
         </div>
-        </div>
+
         <ion-list class="center menu-list">
             <ion-item ng-repeat="menu in vm.menuList" menu-toggle="left" ui-sref="{{menu.statego}}">
                 <i style="font-size: 25px;" class="icon {{menu.icon}}"></i>

@@ -14,6 +14,7 @@
             'auth',
             'historial',
             'perfil',
-            'servicios'
+            'servicios',
+            'pagos'
         ]);
 })();
